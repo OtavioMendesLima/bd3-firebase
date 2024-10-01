@@ -1,0 +1,43 @@
+|
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BD3 - FIREBASE</title>
+    <link rel="styleheet" href="style.css" />
+</head>
+
+<body></body>
+
+<!-- SDK -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+<!-- SDK DO FIRESTORE -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+<!-- CONEXÃO COM O FIREBASE -->
+
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyB9xeR_CUW_yucWx0SywfhU2jF7VH5zYYc",
+        authDomain: "bd3-libri-otavio.firebaseapp.com",
+        projectId: "bd3-libri-otavio",
+        storageBucket: "bd3-libri-otavio.appspot.com",
+        messagingSenderId: "34622102952",
+        appId: "1:34622102952:web:96213aae535d5395d6d19d",
+        measurementId: "G-XSLM8W3BHZ"
+    };
+
+    /*INICIALIZA O FIREBASE*/
+    firebase.initializeApp(firebaseConfig);
+
+    /*INICIALIZA O FIRESTORE*/
+    const db = firebase.firestore();
+    console.log(db);
+</script>
+
+<script src="app.js"></script>
+</html>
